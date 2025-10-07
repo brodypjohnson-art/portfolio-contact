@@ -1,0 +1,24 @@
+<!doctype html>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  .wrap{max-width:520px;margin:40px auto;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+  h2{font-weight:800;font-size:40px;line-height:1.1;margin:0 0 16px}
+  label{font-weight:600}
+  input,textarea{width:100%;padding:10px;margin:6px 0;border:1px solid #ddd;border-radius:8px;font:inherit}
+  button{background:#e64056;color:#fff;border:0;border-radius:26px;padding:14px 26px;font-weight:700;margin-top:10px;cursor:pointer}
+</style>
+<div class="wrap">
+  <h2>LET'S TALK</h2>
+  <form action="https://formspree.io/f/xxxxabcd" method="POST">
+    <label>Your Name *</label>
+    <input name="name" required>
+    <label>Email *</label>
+    <input type="email" name="_replyto" required>
+    <label>Message *</label>
+    <textarea name="message" required rows="6"></textarea>
+    <input type="text" name="_gotcha" style="display:none">
+    <input type="hidden" name="_subject" value="New portfolio message">
+    <input type="hidden" name="_redirect" value="https://your-site/thanks">
+    <button type="submit">SEND MESSAGE</button>
+  </form>
+</div>
